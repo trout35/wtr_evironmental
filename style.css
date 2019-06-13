@@ -1,0 +1,618 @@
+/*Theme Name: WTRevironmental
+Author: Enx2 Marketing
+Version: 1.0*/
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	font-family: 'Raleway', sans-serif;
+	line-height: 18px;
+}
+html, body 
+{
+    height:100%;
+    overflow-x: hidden;
+} 
+
+.bg
+{
+    height:100%;
+    background-image: url("images/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+.bg2
+{
+    height:40%;
+    background-image: url("images/11.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.clear
+{
+	clear: both;
+}
+header
+{
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.container{
+	width: 96%;
+	margin: 0 auto;
+	padding-top: 18px;
+	padding-bottom: 20px;
+}
+.logo
+{
+	float: left;
+
+}
+nav
+{
+	float: right;
+}
+nav ul
+{
+	list-style: none;
+}
+
+nav li, nav a
+{
+	display: inline;
+	text-decoration: none;
+	padding: 35px 0px 20px 30px;
+	color: white;
+	font-weight: 900;
+	font-size: 16px;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+nav li:hover, nav a:hover
+{
+	color: #cc3333;
+}
+
+nav	a
+{
+	position: relative;
+    text-align: center;
+    top: 24px;
+
+}
+
+.sub-menu li
+{
+	position: relative;
+}
+.sub-menu li::before
+{
+	content:"";
+	position: absolute;
+	height: 120px;
+	border-left: 1px solid rgba(255, 255, 255, .2);
+	transform: skew(-20deg);
+	top: 0;
+	
+}
+.col-menu
+{
+	display: none;
+}
+.burger
+{
+	cursor: pointer;
+	display: none;
+}
+.burger div
+{
+	width: 30px;
+	background-color: white;
+	height: 5px; 
+	margin: 5px;
+	position: relative;
+	z-index: 5;
+	transition: all 0.3s ease;
+}
+.col-menu li
+{
+	padding: 45px 0px 20px 0px;
+}
+
+.line
+{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  z-index: 2;
+}
+
+h1
+{
+	position: relative;
+	text-align: center;
+	top: 40%; 
+	color: white;
+	font-weight: 900;
+	font-size: 50px;
+}
+h2
+{
+	font-weight: 900;
+	font-size: 18px;
+	color: #132840;
+	padding: 20px 0px 12px 0px;
+}
+h3
+{
+	font-weight: 900;
+	font-size: 24px;
+	padding: 30px 20px 45px 25px;
+	color: #cc3333;
+}
+
+h4
+{
+	font-weight: 900;
+	font-size: 15px;
+	color: #132840;
+	padding-bottom: 20px;
+}
+
+button
+{
+	background: #cc3333;
+	border:  1px solid white !important;
+	color: white;
+	padding: 13px 30px 13px 30px;
+	font-weight: 900;
+	font-size: 17px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.5s;
+
+}
+
+button:hover 
+{
+	background: none;
+    border: 1px solid #cc3333 !important;
+    color: #cc3333;
+	
+}
+.button
+{
+	position: relative;
+	top: 48%;
+	text-align: center;
+}
+
+.bottom-border
+{
+	border-bottom: 1px;
+}
+
+.grid-container 
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 230px;
+  padding: 60px 147px 78px 147px;
+}
+
+.grid-container > div 
+{
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+  position: relative;
+}
+.grid-container p
+{
+	font-size: 14px;
+	text-align: left;
+	padding-right: 104px;
+}
+.grid-container .item2::before
+{
+	content:"";
+	position: absolute;
+	height: 220px;
+    margin-top: 40px;
+    left: -145px;
+	border-left: 1px solid #9cb3a7;
+	transform: skew(-20deg);
+	top: 0;
+}
+.grid-container .item3::before
+{
+	content:"";
+	position: absolute;
+	height: 220px;
+    margin-top: 40px;
+    left: -145px;
+	border-left: 1px solid #9cb3a7;
+	transform: skew(-20deg);
+	top: 0;
+}
+
+.grid-container2 > div 
+{
+  padding: 20px 0;
+  font-size: 30px;
+}
+.grid-container2 p
+{
+	font-size: 14px;
+	line-height: 25px;
+}
+.grid-container2 .item1
+{
+	display: inline-block;
+    width: 45%;
+    padding: 0 40px 0 0;
+    vertical-align: middle;
+}
+.grid-container2 .item2
+{
+	display: inline-block;
+    width: 28%;
+    padding: 10px 40px 0 8%;
+    vertical-align: middle;
+}
+
+.grid-container3 > div 
+{
+  padding: 20px 0;
+  font-size: 30px;
+}
+.grid-container3 p
+{
+	font-size: 14px;
+	line-height: 25px;
+}
+.grid-container3 .item1
+{
+	display: inline-block;
+    width: 28%;
+    padding: 10% 0px 0 30px;
+    vertical-align: middle;
+}
+.grid-container3 .item2
+{
+	display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+    float: right;
+}
+.shape 
+{
+    height: 120%;
+    position: relative;
+    margin-bottom: 100px;
+ }
+.shape::before {
+    background: #EBEFE0 none repeat;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-40%) skewX(153deg) !important;
+}
+.footer-container
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 230px;
+  padding: 80px 30px 78px 30px;
+}
+
+.footer-container > div 
+{
+  padding: 20px 0;
+  font-size: 30px;
+}
+.foorer-container p
+{
+	font-size: 14px;
+}
+.footer1 img
+{
+	padding-bottom: 20px;
+}
+.footer1 > div
+{
+	color: white;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 900;
+}
+.footer2
+{
+	text-align: center;
+}
+.footer3
+{
+	text-align: right;
+	color: white;
+} 
+.footer3 > div
+{
+	font-size: 15px;
+}
+.footer3 img
+{
+	padding-bottom: 60px;
+
+}
+@media (max-width: 1500px) 
+{
+	.grid-container p
+	{
+		padding-right: 0px;
+	}
+	.grid-container2 .item2 
+	{
+    	width: 38%;
+   	 	padding: 80px 40px 0px 8%;
+	}
+	.grid-container3 .item1 
+	{
+    	width: 38%;
+   	 	padding: 130px 40px 0px 8%;
+	}
+}
+@media (max-width: 1300px) 
+{
+	.grid-container
+	{
+		grid-gap: 125px;
+	}
+	
+	.grid-container .item3::before
+	{
+		left: -75px;
+	}
+	.grid-container .item2::before
+	{
+		left: -75px;
+	}
+	
+  	.shape
+	{
+		height: 100%
+	}
+}
+@media (max-width: 1180px) 
+{
+	.footer-container 
+	{
+    	grid-gap: 0px;
+    
+	}
+}
+
+@media (max-width: 1100px) 
+{
+	.grid-container
+	{
+		display: inherit;
+	}
+	.grid-container .item2::before
+	{
+		border: none;
+	}
+	.grid-container .item3::before
+	{
+		border: none;
+	}
+	.grid-container > div 
+	{
+    	text-align: center;
+	}
+	.grid-container p
+	{
+		text-align: center;
+	}
+}
+@media (max-width: 1050px) 
+{
+	.grid-container
+	{
+		text-align: center;
+		padding: 60px 15px 78px 15px;
+	}
+	.grid-container2 .item1 
+	{
+		width: 100%;
+	}
+	.grid-container2 .item2
+	{
+		text-align: center;
+		width: 85%;
+    	padding: 80px 40px 0px 8%;
+
+	}
+	.grid-container3 .item1
+	{
+		text-align: center;
+		width: 85%;
+    	padding: 80px 40px 0px 8%;
+
+	}
+	.grid-container3 .item2
+	{
+		width: 100%;
+	}
+	h3
+	{
+		text-align: center;
+	}
+	h4
+	{
+		text-align: center;
+	}
+	.shape 
+	{
+    	height: 1700px;
+		background-color: #EBEFE0;
+	}
+	
+	.shape::before 
+	{
+		transform: none !important;
+		height: 1300px;
+		content: none;	
+	}
+}
+@media (max-width: 950px) 
+{
+	h1
+	{
+		font-size: 40px;
+	}
+	.sub-menu
+	{
+		display: none;
+	}
+	
+	.col-menu
+	{
+		position: absolute;
+		right: 0px;
+		height: 100%;
+		width: 100%;
+		top: 0vh;
+		background-color: #cc3333;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 2;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		
+	}
+	.col-menu li
+	{
+		opacity: 0;
+		position: relative;
+		top: 75px;
+	}
+	.burger
+	{
+		display: block;
+	}
+}
+@media (max-width: 780px) 
+{
+	.footer-container
+	{
+    	display: initial;
+		text-align: center;
+		padding: 0;
+	}
+	.footer2 
+	{
+    	text-align: center;
+	}
+	.footer3 
+	{
+    	text-align: center;
+	}
+}
+@media (max-width: 730px) 
+{
+	h1
+	{
+		font-size: 30px;
+	}
+	.shape 
+	{
+    	height: 1550px;
+	}
+	
+}
+
+	
+@media (max-width: 555px) 
+{
+	.button
+	{
+		top: 40%;
+	}
+	h1
+	{
+		font-size: 20px;
+		top: 35%
+	}
+	button
+	{
+		font-size: 12px;
+	}
+	.shape 
+	{
+    	height: 1400px;
+	}
+}
+	
+@media (max-width: 375px) 
+{
+	.shape 
+	{
+    	height: 1465px;
+	}
+	
+}
+
+@media (max-width: 270px) 
+{
+	.shape 
+	{
+		height: 1535px;
+	}
+}
+
+@media (max-width: 247px) 
+{
+	.shape 
+	{
+		height: 1700px;
+	}
+}
+.nav-active
+{
+	transform: translateX(0%);
+}
+@keyframes navFade
+{
+	from
+	{
+		opacity: 0;	
+		transform: translateX(150px);
+	}
+	to
+	{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1
+{
+	transform: rotate(-45deg) translate(-5px, 8px);
+}
+.toggle .line2
+{
+	opacity: 0;
+}
+.toggle .line3
+{
+	transform:  rotate(45deg) translate(-5px, -9px)
+}
